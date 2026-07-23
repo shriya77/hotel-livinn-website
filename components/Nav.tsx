@@ -26,8 +26,9 @@ export function Nav() {
   return (
     <header className={`nav${scrolled ? " scrolled" : ""}`}>
       <div className="nav__inner">
-        <a href="#top" className="brand" aria-label="Liv-Inn home">
-          <span className="brand__mark">L·I</span>
+        <a href="#top" className="brand" aria-label="Hotel Liv-Inn home">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/livinn-mark.png" alt="" className="brand__logo" />
           <span className="brand__name">
             <span className="brand__word">LIV·INN</span>
             <span className="brand__sub">{t.brandSub}</span>

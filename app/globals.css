@@ -120,7 +120,8 @@ button { font-family: inherit; }
   border-bottom-color: var(--line-soft);
 }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem var(--pad); }
-.brand { display: flex; align-items: center; gap: 0.85rem; }
+.brand { display: flex; align-items: center; gap: 0.8rem; }
+.brand__logo { height: 34px; width: auto; display: block; }
 .brand__mark {
   font-family: var(--serif); font-size: 1.1rem;
   width: 42px; height: 42px; display: grid; place-items: center;
@@ -181,19 +182,20 @@ button { font-family: inherit; }
               linear-gradient(160deg, #1a1712, #0c0b09);
 }
 .hero__bg { position: absolute; inset: 0; z-index: 0; will-change: transform; }
-.hero__bg img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.72) saturate(1.05); transform: translateZ(0); }
+.hero__bg img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.6) saturate(1.05); transform: translateZ(0); }
 .hero__veil {
   position: absolute; inset: 0; z-index: 1;
   background:
     /* left scrim — guarantees a dark backing under the text column */
-    linear-gradient(90deg, rgba(10,9,7,0.92) 0%, rgba(10,9,7,0.72) 28%, rgba(10,9,7,0.30) 55%, rgba(10,9,7,0.05) 80%, transparent 100%),
+    linear-gradient(90deg, rgba(8,7,5,0.98) 0%, rgba(8,7,5,0.9) 32%, rgba(8,7,5,0.55) 60%, rgba(8,7,5,0.18) 82%, transparent 100%),
     /* top + bottom fade for the nav and the lede/buttons */
-    linear-gradient(180deg, rgba(10,9,7,0.55) 0%, transparent 26%, transparent 60%, rgba(10,9,7,0.72) 100%);
+    linear-gradient(180deg, rgba(8,7,5,0.6) 0%, transparent 22%, transparent 52%, rgba(8,7,5,0.82) 100%);
 }
 .hero__fg { position: relative; z-index: 2; }
 .hero__content { max-width: 62rem; }
 .hero__eyebrow { font-size: 0.74rem; letter-spacing: 0.34em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.8rem; }
-.hero__title { font-family: var(--serif); font-weight: 300; font-size: clamp(3rem, 11vw, 8.5rem); line-height: 0.94; letter-spacing: -0.03em; }
+.hero__title { font-family: var(--serif); font-weight: 300; font-size: clamp(3rem, 11vw, 8.5rem); line-height: 0.94; letter-spacing: -0.03em; text-shadow: 0 2px 40px rgba(0,0,0,0.45); }
+.hero__lede { text-shadow: 0 1px 20px rgba(0,0,0,0.5); }
 .hero__title span { display: block; }
 .hero__accent { font-style: italic; color: var(--gold-soft); }
 .hero__lede { max-width: 46ch; margin-top: 2rem; font-size: clamp(1rem, 1.6vw, 1.25rem); color: var(--ivory-dim); }
@@ -315,6 +317,7 @@ button { font-family: inherit; }
 .footer__inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem; }
 .footer__brand { display: flex; flex-direction: column; gap: 0.3rem; }
 .footer__logo { font-family: var(--serif); font-size: 1.4rem; letter-spacing: 0.14em; }
+.footer__logo-img { height: 52px; width: auto; display: block; margin-bottom: 0.2rem; }
 .footer__tag { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
 .footer__nav { display: flex; gap: 1.6rem; flex-wrap: wrap; }
 .footer__nav a { font-size: 0.85rem; color: var(--ivory-dim); transition: color .3s; }

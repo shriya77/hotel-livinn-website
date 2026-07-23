@@ -28,7 +28,7 @@ export function Gallery() {
           >
             <Image
               src={item.src}
-              alt={`${t.gallery.eyebrow} — ${i + 1}`}
+              alt={`${t.gallery.eyebrow} ${i + 1}`}
               fill
               placeholder="blur"
               sizes="(max-width: 760px) 50vw, 25vw"

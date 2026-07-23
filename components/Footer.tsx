@@ -10,7 +10,8 @@ export function Footer() {
     <footer className="footer">
       <div className="footer__inner">
         <div className="footer__brand">
-          <span className="footer__logo">LIV·INN</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/livinn-logo.png" alt="Hotel Liv-Inn" className="footer__logo-img" />
           <span className="footer__tag">{t.footer.tag}</span>
         </div>
         <nav className="footer__nav" aria-label="Footer">
