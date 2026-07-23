@@ -64,7 +64,7 @@ export function Hero() {
       </motion.div>
       <div className="hero__veil" aria-hidden />
 
-      <motion.div style={{ y: contentY, opacity: contentOpacity }}>
+      <motion.div className="hero__fg" style={{ y: contentY, opacity: contentOpacity }}>
         <div className="hero__content">
           <motion.p
             className="hero__eyebrow"
