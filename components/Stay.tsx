@@ -22,9 +22,6 @@ export function Stay() {
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="stay__body">{t.stay.body1}</p>
-          </Reveal>
-          <Reveal delay={0.15}>
             <p className="stay__body">{t.stay.body2}</p>
           </Reveal>
           <ul className="stay__points">

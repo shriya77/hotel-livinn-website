@@ -42,16 +42,13 @@ export function Hero() {
     offset: ["start start", "end start"],
   });
 
-  // parallax: background drifts slower, content lifts away.
-  // Only translate/opacity animate on scroll (compositor-cheap); the bg keeps a
-  // constant overscan scale so the drift never reveals an edge — no per-frame raster.
-  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", reduce ? "0%" : "10%"]);
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", reduce ? "0%" : "-12%"]);
-  const contentOpacity = useTransform(scrollYProgress, [0, 1], [1, reduce ? 1 : 0.55]);
+  // Only the background parallaxes — a single GPU-composited layer translating
+  // on scroll. The content stays static so nothing repaints per frame (smooth).
+  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", reduce ? "0%" : "7%"]);
 
   return (
     <section className="hero" id="top" ref={ref}>
-      <motion.div className="hero__bg" style={{ y: bgY, scale: 1.2 }} aria-hidden>
+      <motion.div className="hero__bg" style={{ y: bgY, scale: 1.12 }} aria-hidden>
         <Image
           src={heroImage}
           alt=""
@@ -64,7 +61,7 @@ export function Hero() {
       </motion.div>
       <div className="hero__veil" aria-hidden />
 
-      <motion.div className="hero__fg" style={{ y: contentY, opacity: contentOpacity }}>
+      <div className="hero__fg">
         <div className="hero__content">
           <motion.h1
             className="hero__title"
@@ -130,7 +127,7 @@ export function Hero() {
             </div>
           ))}
         </motion.div>
-      </motion.div>
+      </div>
 
       <a href="#stay" className="hero__scroll" aria-label="Scroll down">
         <span />
