@@ -102,7 +102,7 @@ const en: Dict = {
   brandSub: "Exclusive Lodging",
   hero: {
     eyebrow: "Erode · Est. Exclusive Lodging",
-    titleLines: ["Stay where", "the city", "exhales."],
+    titleLines: ["Rest in", "the heart of", "Erode."],
     lede: "We are located in the heart of Erode city, 200 meters from Bus terminal and 2 km from Railway station.",
     reserve: "Reserve a room",
     explore: "Explore rooms",
@@ -294,7 +294,7 @@ const ta: Dict = {
   brandSub: "சிறப்பு தங்குமிடம்",
   hero: {
     eyebrow: "ஈரோடு · சிறப்பு தங்குமிடம்",
-    titleLines: ["நகரின் இதயத்தில்", "அமைதியான", "தங்குமிடம்."],
+    titleLines: ["ஈரோட்டின்", "இதயத்தில்", "ஓய்வெடுங்கள்."],
     lede: "ஈரோடு நகரின் மையத்தில், பேருந்து நிலையத்திலிருந்து 200 மீட்டர் தொலைவிலும், ரயில் நிலையத்திலிருந்து 2 கி.மீ தொலைவிலும் நாங்கள் அமைந்துள்ளோம்.",
     reserve: "அறையை முன்பதிவு செய்யுங்கள்",
     explore: "அறைகளைப் பாருங்கள்",
@@ -486,7 +486,7 @@ const hi: Dict = {
   brandSub: "विशिष्ट आवास",
   hero: {
     eyebrow: "ईरोड · विशिष्ट आवास",
-    titleLines: ["शहर के दिल में", "सुकून भरा", "ठिकाना।"],
+    titleLines: ["ईरोड के", "दिल में", "आराम पाइए।"],
     lede: "हम ईरोड शहर के केंद्र में स्थित हैं, बस टर्मिनल से 200 मीटर और रेलवे स्टेशन से 2 किमी दूर।",
     reserve: "कमरा आरक्षित करें",
     explore: "कमरे देखें",
