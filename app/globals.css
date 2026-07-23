@@ -185,8 +185,10 @@ button { font-family: inherit; }
 .hero__veil {
   position: absolute; inset: 0; z-index: 1;
   background:
-    linear-gradient(180deg, rgba(12,11,9,0.55) 0%, rgba(12,11,9,0.15) 35%, rgba(12,11,9,0.85) 100%),
-    radial-gradient(120% 90% at 20% 30%, transparent 40%, rgba(12,11,9,0.6) 100%);
+    /* left scrim — guarantees a dark backing under the text column */
+    linear-gradient(90deg, rgba(10,9,7,0.92) 0%, rgba(10,9,7,0.72) 28%, rgba(10,9,7,0.30) 55%, rgba(10,9,7,0.05) 80%, transparent 100%),
+    /* top + bottom fade for the nav and the lede/buttons */
+    linear-gradient(180deg, rgba(10,9,7,0.55) 0%, transparent 26%, transparent 60%, rgba(10,9,7,0.72) 100%);
 }
 .hero__fg { position: relative; z-index: 2; }
 .hero__content { max-width: 62rem; }
