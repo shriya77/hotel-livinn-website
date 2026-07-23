@@ -66,15 +66,6 @@ export function Hero() {
 
       <motion.div className="hero__fg" style={{ y: contentY, opacity: contentOpacity }}>
         <div className="hero__content">
-          <motion.p
-            className="hero__eyebrow"
-            variants={fade(0)}
-            initial="hidden"
-            animate="show"
-          >
-            {t.hero.eyebrow}
-          </motion.p>
-
           <motion.h1
             className="hero__title"
             variants={container}
