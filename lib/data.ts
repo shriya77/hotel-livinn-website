@@ -43,9 +43,8 @@ export const rooms: Room[] = [
     id: "single",
     image: room5,
     rates: [
-      { key: "nonAc", price: "₹750" },
-      { key: "ac", price: "₹1,250" },
-      { key: "acDeluxe", price: "₹1,350" },
+      { key: "nonAc", price: "₹850" },
+      { key: "ac", price: "₹1,500" },
     ],
   },
   {
@@ -53,19 +52,17 @@ export const rooms: Room[] = [
     featured: true,
     image: room3,
     rates: [
-      { key: "nonAc", price: "₹1,350" },
-      { key: "ac", price: "₹1,700" },
-      { key: "acDeluxe", price: "₹1,900" },
+      { key: "nonAc", price: "₹1,500" },
+      { key: "ac", price: "₹2,200" },
     ],
   },
   {
     id: "family",
     image: room4,
     rates: [
-      { key: "threeBedNonAc", price: "₹1,750" },
-      { key: "fourBedNonAc", price: "₹2,500" },
-      { key: "fourBedAc", price: "₹3,200" },
-      { key: "fourBedAcDeluxe", price: "₹3,500" },
+      { key: "threeBedNonAc", price: "₹1,900" },
+      { key: "fourBedNonAc", price: "₹2,800" },
+      { key: "fourBedAc", price: "₹3,900" },
     ],
   },
 ];

@@ -141,7 +141,7 @@ const en: Dict = {
     eyebrow: "Rooms & Tariff",
     title: "Choose your quiet corner.",
     intro:
-      "Every rate is inclusive of tax. Extra bed or person: ₹350 (Non-A/C) · ₹450 (A/C).",
+      "Every rate includes GST. Extra bed or person: ₹400 (Non-A/C) · ₹500 (A/C).",
     items: {
       single: {
         name: "Single Rooms",
@@ -333,7 +333,7 @@ const ta: Dict = {
     eyebrow: "அறைகள் & கட்டணம்",
     title: "உங்கள் அமைதியான மூலையைத் தேர்ந்தெடுங்கள்.",
     intro:
-      "அனைத்து கட்டணங்களும் வரி உட்பட. கூடுதல் படுக்கை அல்லது நபர்: ₹350 (ஏசி இல்லாதது) · ₹450 (ஏசி).",
+      "அனைத்து கட்டணங்களும் GST உட்பட. கூடுதல் படுக்கை அல்லது நபர்: ₹400 (ஏசி இல்லாதது) · ₹500 (ஏசி).",
     items: {
       single: {
         name: "ஒற்றை அறைகள்",
@@ -525,7 +525,7 @@ const hi: Dict = {
     eyebrow: "कमरे और दरें",
     title: "अपना शांत कोना चुनें।",
     intro:
-      "सभी दरें कर सहित। अतिरिक्त बिस्तर या व्यक्ति: ₹350 (नॉन-ए/सी) · ₹450 (ए/सी)।",
+      "सभी दरें GST सहित। अतिरिक्त बिस्तर या व्यक्ति: ₹400 (नॉन-ए/सी) · ₹500 (ए/सी)।",
     items: {
       single: {
         name: "सिंगल कमरे",
