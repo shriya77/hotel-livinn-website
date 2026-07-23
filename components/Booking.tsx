@@ -27,10 +27,30 @@ export function Booking() {
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!formRef.current?.checkValidity()) {
-      formRef.current?.reportValidity();
+    const form = formRef.current;
+    if (!form?.checkValidity()) {
+      form?.reportValidity();
       return;
     }
+
+    // Build a WhatsApp message to the front desk (kept in English for staff).
+    const fd = new FormData(form);
+    const roomLabelsEn = ["Single", "Double", "Family (3 & 4 Bed)"];
+    const lines = [
+      "New booking request for Hotel Liv-Inn",
+      "",
+      `Name: ${fd.get("name")}`,
+      `Phone: ${fd.get("phone")}`,
+      `Check-in: ${fd.get("checkin")}`,
+      `Check-out: ${fd.get("checkout")}`,
+      `Room: ${roomLabelsEn[roomIdx] ?? roomLabelsEn[0]}`,
+      `Guests: ${fd.get("guests")}`,
+    ];
+    const url = `https://wa.me/${contact.whatsapp}?text=${encodeURIComponent(
+      lines.join("\n")
+    )}`;
+    window.open(url, "_blank", "noopener");
+
     setSubmitted(true);
   };
 

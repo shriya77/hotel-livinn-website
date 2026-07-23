@@ -75,9 +75,10 @@ import at a new one. Current mapping:
 
 ## Booking form
 
-Front-end only — it validates and shows a confirmation message. To take real
-reservations, wire the `onSubmit` in `components/Booking.tsx` to an API route,
-email service, or booking provider.
+Validates the fields, then opens **WhatsApp** to the front desk
+(`contact.whatsapp` in `lib/data.ts`) with the name, dates, room, and guest
+count pre-filled — the guest just taps send. No backend, no payment online.
+Logic lives in `onSubmit` in `components/Booking.tsx`.
 
 ## Deploy
 

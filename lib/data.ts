@@ -109,6 +109,7 @@ export const contact = {
     { display: "222 5857", href: "tel:04242225857" },
   ],
   mobile: { display: "+91 88259 35992", href: "tel:+918825935992" },
+  whatsapp: "918825935992", // wa.me format (country code + number, digits only)
   email: "hotellivinn@gmail.com",
   maps: "https://maps.app.goo.gl/X6nrpemZQDyMtFrw7",
 };

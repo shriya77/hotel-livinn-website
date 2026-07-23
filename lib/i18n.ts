@@ -245,7 +245,7 @@ const en: Dict = {
   booking: {
     eyebrow: "Reserve",
     title: "Begin your stay.",
-    note: "Share your dates and we'll confirm availability by phone. No payment taken online.",
+    note: "Share your dates and we'll confirm on WhatsApp. No payment taken online.",
     name: "Full name",
     namePlaceholder: "Your name",
     phone: "Phone",
@@ -254,9 +254,9 @@ const en: Dict = {
     roomType: "Room type",
     guests: "Guests",
     roomOptions: ["Single", "Double", "Family (3 & 4 Bed)"],
-    submit: "Request reservation",
+    submit: "Reserve on WhatsApp",
     success:
-      "Thank you. We've noted your request, and our front desk will call to confirm.",
+      "Opening WhatsApp with your booking details. Send the message and our front desk will confirm.",
     contact: {
       name: "Hotel Liv-Inn Lodge",
       address: [
@@ -437,7 +437,7 @@ const ta: Dict = {
   booking: {
     eyebrow: "முன்பதிவு",
     title: "உங்கள் தங்குதலைத் தொடங்குங்கள்.",
-    note: "உங்கள் தேதிகளைப் பகிருங்கள், தொலைபேசி மூலம் இடம் கிடைப்பதை உறுதிசெய்வோம். ஆன்லைனில் பணம் வசூலிக்கப்படாது.",
+    note: "உங்கள் தேதிகளைப் பகிருங்கள், வாட்ஸ்அப் மூலம் உறுதிசெய்வோம். ஆன்லைனில் பணம் வசூலிக்கப்படாது.",
     name: "முழு பெயர்",
     namePlaceholder: "உங்கள் பெயர்",
     phone: "தொலைபேசி",
@@ -446,9 +446,9 @@ const ta: Dict = {
     roomType: "அறை வகை",
     guests: "விருந்தினர்கள்",
     roomOptions: ["ஒற்றை", "இரட்டை", "குடும்பம் (3 & 4 படுக்கை)"],
-    submit: "முன்பதிவைக் கோருங்கள்",
+    submit: "வாட்ஸ்அப்பில் முன்பதிவு செய்யுங்கள்",
     success:
-      "நன்றி. உங்கள் கோரிக்கையைப் பதிவு செய்துவிட்டோம், உறுதிப்படுத்த எங்கள் வரவேற்பு பணியகம் அழைக்கும்.",
+      "உங்கள் முன்பதிவு விவரங்களுடன் வாட்ஸ்அப் திறக்கிறது. செய்தியை அனுப்புங்கள், எங்கள் வரவேற்பு பணியகம் உறுதிப்படுத்தும்.",
     contact: {
       name: "ஹோட்டல் லிவ்-இன் லாட்ஜ்",
       address: [
@@ -629,7 +629,7 @@ const hi: Dict = {
   booking: {
     eyebrow: "आरक्षण",
     title: "अपना ठहराव शुरू करें।",
-    note: "अपनी तारीखें बताएं, हम फ़ोन पर उपलब्धता की पुष्टि करेंगे। ऑनलाइन कोई भुगतान नहीं लिया जाता।",
+    note: "अपनी तारीखें बताएं, हम व्हाट्सएप पर पुष्टि करेंगे। ऑनलाइन कोई भुगतान नहीं लिया जाता।",
     name: "पूरा नाम",
     namePlaceholder: "आपका नाम",
     phone: "फ़ोन",
@@ -638,9 +638,9 @@ const hi: Dict = {
     roomType: "कमरे का प्रकार",
     guests: "मेहमान",
     roomOptions: ["सिंगल", "डबल", "परिवार (3 और 4 बेड)"],
-    submit: "आरक्षण का अनुरोध करें",
+    submit: "व्हाट्सएप पर आरक्षण करें",
     success:
-      "धन्यवाद। हमने आपका अनुरोध दर्ज कर लिया है, पुष्टि के लिए हमारा रिसेप्शन कॉल करेगा।",
+      "आपके बुकिंग विवरण के साथ व्हाट्सएप खुल रहा है। संदेश भेजें और हमारा रिसेप्शन पुष्टि करेगा।",
     contact: {
       name: "होटल लिव-इन लॉज",
       address: [
