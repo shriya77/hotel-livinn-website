@@ -84,6 +84,20 @@ export type Dict = {
     };
   };
   footer: { tag: string; copy: string };
+  chat: {
+    concierge: string;
+    online: string;
+    greeting: string;
+    placeholder: string;
+    send: string;
+    openAria: string;
+    closeAria: string;
+    error: string;
+    retry: string;
+    call: string;
+    whatsapp: string;
+    quickActions: { emoji: string; label: string; prompt: string }[];
+  };
 };
 
 // ---------------------------------------------------------------
@@ -275,6 +289,30 @@ const en: Dict = {
   footer: {
     tag: "Exclusive Lodging · Erode",
     copy: "© {year} Hotel Liv-Inn. All rights reserved.",
+  },
+  chat: {
+    concierge: "Virtual Concierge",
+    online: "Online now",
+    greeting:
+      "Hi! Welcome to Hotel Liv-Inn 👋 I'm your virtual concierge, here to help with rooms, amenities, dining, check-in, directions and bookings. How can I help you today?",
+    placeholder: "Ask me anything…",
+    send: "Send",
+    openAria: "Chat with the concierge",
+    closeAria: "Close chat",
+    error:
+      "Sorry, I'm having trouble responding right now. Please try again in a moment, or call our reception at +91 88259 35992.",
+    retry: "Try again",
+    call: "Call",
+    whatsapp: "WhatsApp",
+    quickActions: [
+      { emoji: "🏨", label: "Rooms & Rates", prompt: "What rooms and rates do you have?" },
+      { emoji: "📅", label: "Check Availability", prompt: "Do you have rooms available?" },
+      { emoji: "🍽️", label: "Dining", prompt: "What are the dining options?" },
+      { emoji: "🕐", label: "Check-in & Check-out", prompt: "What are your check-in and check-out times?" },
+      { emoji: "📍", label: "Location & Directions", prompt: "Where are you located and how do I get there?" },
+      { emoji: "🅿️", label: "Parking & Amenities", prompt: "Do you have parking, and what amenities are available?" },
+      { emoji: "📞", label: "Contact Hotel", prompt: "How can I contact the hotel?" },
+    ],
   },
 };
 
@@ -468,6 +506,30 @@ const ta: Dict = {
     tag: "சிறப்பு தங்குமிடம் · ஈரோடு",
     copy: "© {year} ஹோட்டல் லிவ்-இன். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
   },
+  chat: {
+    concierge: "மெய்நிகர் வரவேற்பாளர்",
+    online: "இப்போது இணைப்பில்",
+    greeting:
+      "வணக்கம்! ஹோட்டல் லிவ்-இன்னுக்கு வரவேற்கிறோம் 👋 நான் உங்கள் மெய்நிகர் வரவேற்பாளர். அறைகள், வசதிகள், உணவு, செக்-இன், வழிகள், முன்பதிவு என அனைத்திலும் உதவுவேன். இன்று எப்படி உதவட்டும்?",
+    placeholder: "எதை வேண்டுமானாலும் கேளுங்கள்…",
+    send: "அனுப்பு",
+    openAria: "வரவேற்பாளருடன் அரட்டை",
+    closeAria: "அரட்டையை மூடு",
+    error:
+      "மன்னிக்கவும், இப்போது பதிலளிப்பதில் சிக்கல். சிறிது நேரத்தில் மீண்டும் முயற்சிக்கவும், அல்லது எங்கள் வரவேற்பை +91 88259 35992 என்ற எண்ணில் அழைக்கவும்.",
+    retry: "மீண்டும் முயற்சி",
+    call: "அழைக்க",
+    whatsapp: "WhatsApp",
+    quickActions: [
+      { emoji: "🏨", label: "அறைகள் & விலை", prompt: "உங்களிடம் என்ன அறைகள் உள்ளன, விலை எவ்வளவு?" },
+      { emoji: "📅", label: "அறை உள்ளதா", prompt: "அறைகள் காலியாக உள்ளதா?" },
+      { emoji: "🍽️", label: "உணவு", prompt: "உணவு வசதிகள் என்ன?" },
+      { emoji: "🕐", label: "செக்-இன் & அவுட்", prompt: "செக்-இன், செக்-அவுட் நேரம் என்ன?" },
+      { emoji: "📍", label: "இடம் & வழி", prompt: "நீங்கள் எங்கே இருக்கிறீர்கள், எப்படி வருவது?" },
+      { emoji: "🅿️", label: "பார்க்கிங் & வசதிகள்", prompt: "பார்க்கிங் உண்டா, என்ன வசதிகள் உள்ளன?" },
+      { emoji: "📞", label: "தொடர்பு", prompt: "ஹோட்டலை எப்படி தொடர்புகொள்வது?" },
+    ],
+  },
 };
 
 // ---------------------------------------------------------------
@@ -659,6 +721,30 @@ const hi: Dict = {
   footer: {
     tag: "विशिष्ट आवास · ईरोड",
     copy: "© {year} होटल लिव-इन। सर्वाधिकार सुरक्षित।",
+  },
+  chat: {
+    concierge: "वर्चुअल कॉन्सियज",
+    online: "अभी ऑनलाइन",
+    greeting:
+      "नमस्ते! होटल लिव-इन में आपका स्वागत है 👋 मैं आपका वर्चुअल कॉन्सियज हूँ, कमरे, सुविधाएं, खाना, चेक-इन, रास्ता और बुकिंग में मदद के लिए हाज़िर। आज मैं आपकी क्या मदद करूँ?",
+    placeholder: "कुछ भी पूछें…",
+    send: "भेजें",
+    openAria: "कॉन्सियज से बात करें",
+    closeAria: "चैट बंद करें",
+    error:
+      "क्षमा करें, अभी जवाब देने में दिक्कत हो रही है। कृपया थोड़ी देर में फिर कोशिश करें, या हमारे रिसेप्शन को +91 88259 35992 पर कॉल करें।",
+    retry: "फिर कोशिश करें",
+    call: "कॉल करें",
+    whatsapp: "WhatsApp",
+    quickActions: [
+      { emoji: "🏨", label: "कमरे और दरें", prompt: "आपके पास कौन से कमरे और दरें हैं?" },
+      { emoji: "📅", label: "उपलब्धता", prompt: "क्या कमरे उपलब्ध हैं?" },
+      { emoji: "🍽️", label: "खाना", prompt: "खाने के क्या विकल्प हैं?" },
+      { emoji: "🕐", label: "चेक-इन और आउट", prompt: "चेक-इन और चेक-आउट का समय क्या है?" },
+      { emoji: "📍", label: "लोकेशन और रास्ता", prompt: "आप कहाँ स्थित हैं और कैसे पहुँचें?" },
+      { emoji: "🅿️", label: "पार्किंग और सुविधाएं", prompt: "क्या पार्किंग है और कौन सी सुविधाएं हैं?" },
+      { emoji: "📞", label: "संपर्क", prompt: "होटल से कैसे संपर्क करें?" },
+    ],
   },
 };
 

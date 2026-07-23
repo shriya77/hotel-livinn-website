@@ -80,6 +80,30 @@ Validates the fields, then opens **WhatsApp** to the front desk
 count pre-filled — the guest just taps send. No backend, no payment online.
 Logic lives in `onSubmit` in `components/Booking.tsx`.
 
+## Virtual Concierge (chatbot)
+
+A Gemini-powered concierge (floating button, bottom-right) that answers guest
+questions in English, Tamil, or Tanglish. Modular and secure:
+
+- `lib/chatbot/knowledge.ts` — the hotel knowledge base (single source of truth;
+  reuses tariff/contact from `lib/data.ts` so nothing drifts). Edit `facts` here
+  to update hotel info; anything marked `UNVERIFIED` is never stated as fact.
+- `lib/chatbot/config.ts` — model + limits (swap the model/provider in one place).
+- `lib/chatbot/prompt.ts` — the system instructions (personality, accuracy rules,
+  language, security). Server-side only.
+- `app/api/chat/route.ts` — secure proxy to Gemini. The **API key never reaches
+  the browser**. Includes per-IP rate limiting, input validation, and safe errors.
+- `components/chatbot/` — `Chatbot.tsx` (UI) + `useChat.ts` (state/transport).
+- Chat UI strings live in the `chat` section of `lib/i18n.ts` (all three languages).
+
+**Setup:** copy `.env.example` to `.env.local` and add a free Gemini key from
+https://aistudio.google.com/apikey. Without a key the concierge shows a friendly
+"contact reception" message instead of crashing. Never commit `.env.local`.
+
+Model note: the code uses `gemini-flash-latest` (Google's current stable Flash).
+The pinned `gemini-2.5-flash` returns 404 for newly-created keys; change the
+model in `lib/chatbot/config.ts` if you later pin a specific version.
+
 ## Deploy
 
 Any static host (Vercel, Netlify, Cloudflare Pages). On Vercel: import the repo,
