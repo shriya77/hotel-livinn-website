@@ -45,7 +45,7 @@ export const facts = {
       "Erode Junction Railway Station: ~2 km",
       "V.O.C Park: walking distance",
       "ATM: walking distance",
-      "Nearest airports (Salem / Coimbatore): " + UNVERIFIED,
+      "Airport: there is no airport in Erode. The nearest is Coimbatore International Airport, roughly 100 km away (about a 2-hour drive). Reception can help arrange a cab.",
     ],
     directions:
       "From the Erode bus stand it is a short 200 m walk. From the railway station it is about 2 km by auto/taxi. Ask reception if you need a pickup or exact directions.",
@@ -68,7 +68,7 @@ export const facts = {
     children:
       "Families are welcome. Youth / school teams are counted as adult occupants. Specific child-age policy: " +
       UNVERIFIED,
-    pets: UNVERIFIED,
+    pets: "Pets are not allowed.",
     gst: "All room rates are inclusive of GST.",
   },
 
@@ -81,9 +81,10 @@ export const facts = {
   // Dining — the hotel does NOT have its own restaurant; good options are nearby.
   dining: {
     inHouseRestaurant: false,
-    breakfast: UNVERIFIED,
+    breakfast:
+      "There is no in-house breakfast or restaurant, but the service staff can pick up food from nearby eateries and bring it to your room on request.",
     note:
-      "The hotel does not have an in-house restaurant, but several well-liked places are within walking distance.",
+      "The hotel does not have an in-house restaurant, but several well-liked places are within walking distance, and staff can fetch food to your room on request.",
     nearby: en.amenities.groups[2].items.map((i) =>
       i.note ? `${i.label} (${i.note})` : i.label
     ),
