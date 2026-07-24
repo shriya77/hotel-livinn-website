@@ -77,6 +77,8 @@ export const facts = {
   wifi: "Free Wi-Fi is available throughout the property.",
   parking: "Car parking is available at the hotel.",
   accessibility: "Elevator / lift on site. Specific wheelchair accessibility: " + UNVERIFIED,
+  providedOnRequest:
+    "Soap, a towel, and a sealed water bottle are provided free on request at the front desk. The sealed water bottle is provided for A/C rooms only.",
 
   // Dining — the hotel does NOT have its own restaurant; good options are nearby.
   dining: {
@@ -179,6 +181,7 @@ ${f.hotelAmenities.map((a) => "- " + a).join("\n")}
 Wi-Fi: ${f.wifi}
 Parking: ${f.parking}
 Accessibility: ${f.accessibility}
+On request at front desk: ${f.providedOnRequest}
 
 DINING
 ${f.dining.note}
