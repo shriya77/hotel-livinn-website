@@ -149,7 +149,7 @@ const en: Dict = {
       "Late check-out available on request",
       "Youth & school teams warmly welcomed",
     ],
-    badgeSub: "638003 · Veerabadhra Street",
+    badgeSub: "638003 · VOC Park Approach Road",
   },
   rooms: {
     eyebrow: "Rooms & Tariff",
@@ -274,9 +274,9 @@ const en: Dict = {
     contact: {
       name: "Hotel Liv-Inn Lodge",
       address: [
-        "125, Veerabadhra Street,",
-        "V.O.C Park Approach Road,",
-        "Erode – 638003",
+        "125, VOC Park Approach Road,",
+        "Near Bus Stand,",
+        "Erode, Tamil Nadu 638003",
       ],
       location:
         "In the heart of Erode, 200 m from the bus terminal and 2 km from the railway station.",
@@ -365,7 +365,7 @@ const ta: Dict = {
       "கோரிக்கையின் பேரில் தாமதமான செக்-அவுட்",
       "இளைஞர் & பள்ளி குழுக்கள் அன்புடன் வரவேற்பு",
     ],
-    badgeSub: "638003 · வீரபத்ர தெரு",
+    badgeSub: "638003 · வி.ஓ.சி பூங்கா அணுகு சாலை",
   },
   rooms: {
     eyebrow: "அறைகள் & கட்டணம்",
@@ -490,9 +490,9 @@ const ta: Dict = {
     contact: {
       name: "ஹோட்டல் லிவ்-இன் லாட்ஜ்",
       address: [
-        "125, வீரபத்ர தெரு,",
-        "வி.ஓ.சி பூங்கா அணுகு சாலை,",
-        "ஈரோடு – 638003",
+        "125, வி.ஓ.சி பூங்கா அணுகு சாலை,",
+        "பேருந்து நிலையம் அருகில்,",
+        "ஈரோடு, தமிழ்நாடு 638003",
       ],
       location:
         "ஈரோட்டின் இதயத்தில், பேருந்து நிலையத்திலிருந்து 200 மீ, ரயில் நிலையத்திலிருந்து 2 கி.மீ தொலைவில்.",
@@ -581,7 +581,7 @@ const hi: Dict = {
       "अनुरोध पर लेट चेक-आउट उपलब्ध",
       "युवा और स्कूल टीमों का सहर्ष स्वागत",
     ],
-    badgeSub: "638003 · वीरभद्र स्ट्रीट",
+    badgeSub: "638003 · वी.ओ.सी पार्क अप्रोच रोड",
   },
   rooms: {
     eyebrow: "कमरे और दरें",
@@ -706,9 +706,9 @@ const hi: Dict = {
     contact: {
       name: "होटल लिव-इन लॉज",
       address: [
-        "125, वीरभद्र स्ट्रीट,",
-        "वी.ओ.सी पार्क अप्रोच रोड,",
-        "ईरोड – 638003",
+        "125, वी.ओ.सी पार्क अप्रोच रोड,",
+        "बस स्टैंड के पास,",
+        "ईरोड, तमिलनाडु 638003",
       ],
       location:
         "ईरोड के दिल में, बस टर्मिनल से 200 मीटर और रेलवे स्टेशन से 2 किमी दूर।",

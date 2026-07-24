@@ -9,6 +9,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/components/LanguageProvider";
+import { hotelJsonLd } from "@/lib/seo";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -88,6 +89,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={fontVars}>
       <body>
+        {/* Structured data for search engines (invisible to visitors). */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(hotelJsonLd()) }}
+        />
         <div className="grain" aria-hidden />
         <LanguageProvider>{children}</LanguageProvider>
       </body>

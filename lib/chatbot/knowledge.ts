@@ -37,7 +37,7 @@ export const facts = {
   },
 
   location: {
-    address: "125, Veerabadhra Street, V.O.C Park Approach Road, Erode – 638003, Tamil Nadu",
+    address: "125, VOC Park Approach Road, near Bus Stand, Erode, Tamil Nadu 638003",
     summary:
       "In the heart of Erode city — 200 metres from the bus terminal and 2 km from the railway station.",
     distances: [
